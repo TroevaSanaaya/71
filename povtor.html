@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box{
+			height: 200px;
+			width: 200px;
+			background: green;
+			border:1px solid black;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div style="display: flex">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>	
+	<button class="x">Поменять цвет!</button>
+</body>
+<script type="text/javascript">
+let boxs = document.querySelectorAll(".box");
+document.querySelector(".x").onclick = function (){
+	boxs[0].style.background = "mediumpurple";
+	boxs[1].style.background = "aquamarine";
+	boxs[2].style.background = "mediumpurple";
+	boxs[3].style.background = "aquamarine";
+}
+</script>
+</html>
